@@ -14,3 +14,72 @@ body {
     place-content: center;
 }
 
+.bg-gblue {
+    background-color: #25477b;
+}
+
+.bg-yellow {
+    background-color: #f9ba00;
+}
+
+.bg-green {
+    background-color: #00aa00;
+}
+
+.bg-blue {
+    background-color: #0078d3;
+}
+
+.bg-dark-cyan {
+    background-color: #3c5164;
+}
+
+.bg-dark-blue {
+    background-color: #15334c;
+}
+
+.bg-red {
+    background-color: #fe4a3f;
+}
+
+.bg-tuscon {
+    background-color: #66424d;
+}
+
+.bg-redpink {
+    background-color: #c72c48;
+}
+
+.reference {
+    padding-left: 36px;
+    text-indent: -36px;
+    font-size: 12px;
+}
+
+.my-tooltip {
+    position: relative;
+    border-bottom: 1px dotted blue;
+    background-color: rgba(150, 250, 250, 0.2);
+}
+
+.my-tooltip span {
+    font-size: 12px;
+    position: absolute;
+    visibility: hidden;
+    background-color: #15334c;
+    color: #f3f3f3;
+    padding: 5px;
+    width: 240px;
+    text-align: center;
+    border-radius: 6px;
+    bottom: 100%;
+    left: 0;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.my-tooltip:hover span {
+    visibility: visible;
+    opacity: 1;
+}

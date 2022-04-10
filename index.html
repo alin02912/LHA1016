@@ -7,15 +7,358 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="index.css" rel="stylesheet">
-
+    <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js">
+    </script>
     <title>LHA1016 Final Assignment</title>
 </head>
-<body class="container">
-<div class="page">
+<body class="container" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#title">Title Page</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#Table-of-Contents">Table of Contents</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#executive-summary">Executive Summary</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#introduction">Introduction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#literature-review">Literature Review</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#data-analysis">Data Analysis</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#data-analysis">Conceptual Framework</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#data-analysis">ADDIE in Action</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#data-analysis">Conclusion</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#data-analysis">References</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="page mx-auto mt-3 bg-primary border border-secondary shadow" id="title">
+    <div class="badge mx-5 text-white text-center text-capitalize text-wrap">
+        <h1>Overhauling Onboarding Through ADDIE</h1>
+    </div>
+    <div class="mt-3 text-center align-middle mx-auto px-3 text-white text-center text-capitalize text-wrap">
+        <p>by Ali Nasser</p>
+    </div>
+
 
 </div>
+<div class="page mx-auto mt-3 bg-white border border-secondary shadow" id="Table-of-Contents">
+    <div class="m-5">
+        <p class="lead">Table of Contents </p>
+        <div class="list-group">
+            <a href="#executive-summary" class="list-group-item list-group-item-action">Executive Summary</a>
+            <a href="#introduction" class="list-group-item list-group-item-action">Introduction</a>
+            <a href="#literature-review" class="list-group-item list-group-item-action">Literature Review</a>
+            <a href="#data-analysis" class="list-group-item list-group-item-action">Data Analysis</a>
+            <a href="#" class="list-group-item list-group-item-action">Conceptual Framework</a>
+            <a href="#" class="list-group-item list-group-item-action">Putting ADDIE into action </a>
+            <a href="#" class="list-group-item list-group-item-action">Conclusion</a>
+            <a href="#" class="list-group-item list-group-item-action">References</a>
+        </div>
+    </div>
+</div>
 
+<div class="page mx-auto mt-3 bg-primary text-white border border-secondary shadow d-flex align-items-center"
+     id="executive-summary">
+    <div class="m-5">
+        <p class="lead text-center fw-bold">Executive Summary</p>
+        <p class="text-wrap">
+            Training proficient Technology Coaches (TCs), to work with some of the most vulnerable students in our
+            school system, is a mammoth task that requires a great deal of both planning and preparation. Any
+            implementation of such training should be rooted in research on adult learning, leadership theories, and
+            data-informed decision-making. This paper outlines a strategy that seeks to accomplish that by relying on
+            the principles of ADDIE to create a self-correcting onboarding process for new TCs.
+        </p>
+    </div>
+</div>
 
+<div class="page mx-auto mt-3 bg-white border border-secondary shadow" id="introduction">
+    <div class="m-5">
+        <p class="lead fw-bold bg-primary text-white px-1">Introduction</p>
+        <p class="text-wrap">
+            As an organization committed to levelling the playing field to learning-disabled (LD) students, we rely
+            heavily on our expertise in assistive technology (AT) to teach students both the tools and the strategies
+            that allow them to access their curriculum and become independent learners. This expertise is gained through
+            an onboarding program that introduces new hires to our organization’s values, our approach to teaching
+            sessions, and our learning strategies.
+            <br/>
+            <br/>
+            Unfortunately, the onboarding program contains a number of deficiencies that manifest themselves in the type
+            and amount of support that new hires typically require after finishing their onboarding. Inexperienced <abbr
+                title="Technology Coaches">TCs</abbr>
+            usually use the company messaging system to request support from their managers and/or co-workers on a
+            number of common topics. This method of requesting assistance is not ideal for a whole host of reasons.
+            First, it takes time for our co-workers to write a full description of the problem that allows for a
+            solution to be provided. This is time that is lost from the session and might jeopardize its status as
+            session per our contract with the school board. Second, employees might inadvertently fail to
+            provide relevant details and crucial contexts that means an inaccurate solution is provided, which can
+            further exacerbate the problem. Third, managers and veteran employees do not have a dedicated time set aside
+            to field questions from their co-workers. This means that they might simply not be available to answer
+            questions and provide support, or they will need to temporarily put off their own task in order to
+            troubleshoot. What usually tends to happen is a combination of the two events; veteran employees switch
+            between providing support to their co-workers and being unavailable as they are conducting their own
+            sessions. These outcomes are unacceptable; new employees should not be left to fend for themselves by trying
+            to troubleshoot their own problems. However, it is not reasonable to expect veteran employees and managers
+            to always be there to support new hires.
+            <br/>
+            <br/>
+            But why do new employees require so much assistance in the first place? The answer to that lies in how the
+            curriculum is structured and its incongruity with the type of skills that TCs utilized in the field. The
+            curriculum focuses on a number of high-level topics provided through courses on the company website while
+            relying on shadowing days to teach specific skills to new employees.
+        </p>
+    </div>
+</div>
+
+<div class="page mx-auto mt-3 bg-white border border-secondary shadow">
+    <div class="m-5">
+        <p class="text-wrap">
+            The problem with this approach is that
+            shadowing days are by their very nature an unstructured learning environment where what gets taught in it is
+            unpredictable and unreliable. If the new employee is “lucky” then they might get to observe and learn how a
+            veteran employee uses a specific assistive technology (AT) or solves a problem that they encountered during
+            the session. It goes without saying that this is simply not an optimum way to teach TCs how to use AT tools
+            or solve some of the most common problems that they might run into. What is sorely missing is formalized
+            training on the actual assistive technology tools that TCs will use extensively and the processes that they
+            can apply should they run into any challenges. This can include procedures such as how to cancel a session
+            if an LD student is not available, how to work with uncooperative students or busy school contacts, and how
+            to troubleshoot technical issues that will inevitably arise during a session.
+            <br/>
+            <br/>
+            The problems with the onboarding program go beyond its content. The program does not have a formalized
+            process that evaluates its effectiveness and rectifies its errors. Incorrect or outdated information might
+            linger in the curriculum without an active process of continuously evaluating its content. This is
+            compounded by the fact that TCs work in the field of technology, and technology changes rapidly as new
+            updates get released and our client school board modify their software licenses.
+            <br/>
+            <br/>
+            It would be ideal if new employees were equipped with the skills and knowledge necessary to not only
+            independently solve problems, but also avoid them in the first place. In this document, I would like to put
+            forth a strategic plan for your consideration that overhauls the way we train our newest members. I will
+            begin by introducing the strategy and what the research literature says about it. I will also supplement the
+            plan with supporting evidence that justify why these steps were chosen and how they helped orient the
+            strategic plan. I will then outline a set of steps to align the onboarding curriculum with the needs of new
+            hires.
+        </p>
+    </div>
+</div>
+
+<div class="page mx-auto mt-3 bg-white border border-secondary shadow" id="literature-review">
+    <div class="m-5">
+        <p class="lead fw-bold bg-primary text-white px-1">Literature Review</p>
+        <p class="text-wrap">
+            To address these aforementioned challenges, we need to overhaul our onboarding program. This overhaul has to
+            be the product of a thoughtful and deliberate process that takes the input of relevant stakeholders into
+            account; this is because the content of the curriculum should reflect the skills utilized by TCs in the
+            field. The overhaul should also lead to a learning experience that keeps up with changing processes and
+            technologies. A strategy with the acronym ADDIE checks both of these boxes. ADDIE is an instructional design
+            strategy comprised of the following components: “Analysis, Design, Development, Implementation, Evaluation”
+            (Chevalier, 2006, p.10). ADDIE was chosen due to its flexibility and proven record of accomplishment of
+            imparting knowledge onto learners in various organizations from the US military to commercial enterprises
+            (Allen, 2006). ADDIE is a staple of the instructional design field that deals primarily with adult learners
+            and a telling example of its strength can be found in the fact that even veteran learning specialists, with
+            years of experience, include principles of ADDIE in their instructional design process (York & Ertmer,
+            2016).
+            <br/>
+            <br/>
+            There are plenty of examples of ADDIE being successfully employed to create educational content for a wide
+            range of adult audiences. For example, Peterson (2003) employed the ADDIE steps to design and create a
+            Master’s level course, and the course students themselves used the strategy as a scaffold when working on
+            their own course projects. Peterson explained that using the Analysis step of ADDIE both puts the learners’
+            needs at the forefront of the course design and makes use of that analysis throughout the steps of the
+            strategy (Peterson, 2003). This elevates course design to go beyond being “teacher-centric approach”
+            (Peterson, 2003, p.228). The evaluation stage revealed that the students rated the course as effective while
+            also providing feedback about what aspects of the design can be improved (Peteson, 2003). Much like
+            Peterson, Al-Bulushi & Ismail (2017) made use of ADDIE when developing a university teacher preparation
+            program. The authors of this study conducted a comprehensive analysis phase to glean the learners’
+            perspective and identify weaknesses within the current program (the instructional gap). Their analysis
+            revealed a number of pertinent factors that impact the effectiveness of the program such as the roles of
+            learners, relationship between the stakeholders, and the causes of performance gaps.
+        </p>
+    </div>
+</div>
+
+<div class="page mx-auto mt-3 bg-white border border-secondary shadow">
+    <div class="m-5">
+        <p class="text-wrap">
+            With a goal of
+            fostering collaboration and reciprocity, Zhang (2020) set about using ADDIE to create an English language
+            course where there are effective means of communication between teachers and learners to facilitate the
+            language acquisition. ADDIE came into play through analysis of the learner needs and teacher capacity, which
+            allowed for the design and development of instructional content that is appropriate for the student as it
+            took into account their language skill, learning willingness, and goals (Zhang, 2020).
+            <br/>
+            <br/>
+            A common theme underpinning this research is the authors’ use of ADDIE as a cornerstone of the process of
+            creating relevant and responsive educational experiences. Through analysis, they acquainted themselves with
+            their learners and then designed and developed instructional experiences that built upon their examination.
+            This fits perfectly with our goals, since addressing the learners' needs is a major objective of ours, and
+            we will use the strategy to create an iterative, board-specific content that addresses challenges shared by
+            new employees, while also formatively evaluating the effectiveness of the material based on the feedback of
+            those who use it in their day-to-day job.
+            <br/>
+            <br/>
+        </p>
+        <p class="lead">Anchoring ADDIE within Knowle’s Theory of Andragogy:</p>
+        <p class="text-wrap">
+            Another strength of this approach is that it is anchored in highly regarded Adult Learning Theories,
+            specifically Knowle’s theory of Andragogy. According to Knowle, adults learn best when the content they are
+            learning is relevant to their work; That’s because Knowle held that adult learners are problem centered
+            (McGrath, 2009). For that reason, adults will be more motivated to acquire information that helps them solve
+            everyday problems. ADDIE fulfills that goal by taking the input of TCs and incorporating it into the content
+            of the curriculum. Second it evaluates the effectiveness of the content to keep up to date with the changing
+            work context so that it continues to provide accurate and relevant information to TCs.
+        </p>
+
+    </div>
+</div>
+
+<div class="page mx-auto mt-3 bg-white border border-secondary shadow" id="data-analysis">
+    <div class="m-5">
+        <p class="lead fw-bold bg-primary text-white px-1">Survey Results and data analysis</p>
+        <p class="text-wrap">
+            There are two sets of data that I would like to share. The first one is survey results that was conducted
+            with employees and second is summary of the number and type of questions that were submitted by employees to
+            the company chat. These data were collected for the purpose of gaining a better picture of the efficacy of
+            the onboarding program in its current state. The survey was structured to inquire about our colleagues’
+            opinions of the onboarding instructional content, and what can be done to make it better. The survey was
+            conducted in-person while the data were compiled from company chat logs.
+            <br/>
+            <br/>
+            Survey respondents indicated that including content on the appropriate cancellation
+            procedure is the most popular demand. This was followed by needs to learn more about
+            completing session reports (STMS) and including more instruction on the various <abbr
+                title="Assistive Technology">AT tools</abbr>.
+            <br/>
+            <br/>
+            Examination of the chat logs revealed that requiring help with using AT was the most common topic.
+            This was followed by questions on how to correctly cancel a session, how to resolve technical issues, and
+            which
+            options to choose when completing a report (STMS).
+            <br/>
+            <br/>
+        </p>
+        <p class="lead">Summary Table</p>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+            </tr>
+            <tr>
+                <td>Mary</td>
+                <td>Moe</td>
+                <td>mary@example.com</td>
+            </tr>
+            <tr>
+                <td>July</td>
+                <td>Dooley</td>
+                <td>july@example.com</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<div class="page mx-auto mt-3 bg-white border border-secondary shadow">
+    <div class="m-5" style="width:100%">
+        <p class="lead text-center">Summary of Survey and Chat Logs</p>
+        <div class="d-flex flex-column gap align-items-center">
+            <canvas id="survey" style="width:100%;max-width:600px;margin-bottom:10px"></canvas>
+
+            <canvas id="chat-logs" style="width:100%;max-width:600px"></canvas>
+        </div>
+    </div>
+</div>
+<div class="page mx-auto mt-3 bg-white border border-secondary shadow">
+    <div class="container mt-3">
+        <div class="m-5">
+
+        </div>
+    </div>
+</div>
+
+<script>
+    var xValues = ["Cancellation", "STMS", "AT", "Pay"];
+    var yValues = [5, 3, 3, 1];
+    var barColors = [
+        "#f9ba00",
+        "#00aa00",
+        "#fe4a37",
+        "#0078d3",
+    ];
+
+    new Chart("survey", {
+        type: "doughnut",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: "Most Frequent Responses "
+            }
+        }
+    });
+</script>
+
+<script>
+    var xValues = ["AT", "Cancellation", "Technical Issues", "STMS", "Student Issues"];
+    var yValues = [14, 8, 9, 5, 5];
+    var barColors = [
+        "#fe4a37",
+        "#f9ba00",
+        "#15334c",
+        "#00aa00",
+        "#66788c"
+    ];
+
+    new Chart("chat-logs", {
+        type: "doughnut",
+        data: {
+            labels: xValues,
+            datasets: [{
+                backgroundColor: barColors,
+                data: yValues
+            }]
+        },
+        options: {
+            title: {
+                display: true,
+                text: "Most Common Support Request Topics"
+            }
+        }
+    });
+</script>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -23,3 +366,13 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
+<!--<div class="page mx-auto mt-3 bg-white border border-secondary shadow" id="introduction">-->
+<!--    <div class="m-5">-->
+<!--        <p class="lead fw-bold bg-primary text-white px-1">Literature Review</p>-->
+<!--        <p class="text-wrap">-->
+<!--        </p>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--<abbr title="Technology Coaches">TCs</abbr>-->
